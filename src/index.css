@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Custom styles for range input */
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none; /* Remove default styling */
+  width: 100%;
+  background: transparent; /* Remove default background */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none; /* Remove default styling */
+  width: 20px; /* Size of the thumb */
+  height: 20px; /* Size of the thumb */
+  border: 3px solid rgb(94, 111, 140,0.5); /* Border color */
+  border-radius: 50%; /* Round shape */
+  background: #A5E0DD; /* Thumb color */
+  cursor: pointer; /* Cursor style */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Size of the thumb */
+  height: 20px; /* Size of the thumb */
+  border: 2px solid #105955; /* Border color */
+  border-radius: 50%; /* Round shape */
+  background: #20B2AA; /* Thumb color */
+  cursor: pointer; /* Cursor style */
+}
